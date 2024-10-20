@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Book Details</title>
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+	<body>
+		<header class="navbar-bg">
+			<nav class="navbar container">
+				<a href="index.html">
+					<img class="logo" src="./assets/icons/logo.png" alt="logo" />
+				</a>
+				<a class="navbar__link" href="index.html">Home</a>
+				<a class="navbar__link" href="wishlist.html">Wishlist</a>
+			</nav>
+		</header>
+
+		<div class="book-page-container">
+			<div class="book-details">
+				<!-- Book Cover and Info -->
+				<div class="book-cover-info">
+					<img
+						id="book-cover"
+						src="https://via.placeholder.com/250"
+						alt="Book Cover"
+					/>
+					<div class="book-info">
+						<h1 id="book-title"></h1>
+						<p id="book-author"></p>
+						<p id="book-genre"></p>
+						<p id="book-languages"></p>
+						<p id="book-download"></p>
+						<!-- Wishlist Button -->
+						<button id="wishlist-btn">
+							<img
+								src="./assets/icons/heart-outlined.png"
+								alt="Add to Wishlist"
+							/>
+							Add to wishlist
+						</button>
+					</div>
+				</div>
+
+				<!-- Book Description -->
+				<div class="book-description">
+					<h2>Description</h2>
+					<p id="book-description"></p>
+				</div>
+
+				<!-- Additional Book Information -->
+				<div class="book-metadata">
+					<h2>Additional Information</h2>
+					<ul>
+						<li id="book-id"></li>
+						<li id="copyright"></li>
+						<li id="media-type"></li>
+					</ul>
+					<p id="bookshelves"></p>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/book-details.js"></script>
+	</body>
+</html>
